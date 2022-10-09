@@ -1,0 +1,24 @@
+/*comienzo fotos "nuestras marcas" index.html*/
+
+.estilos_enlaces {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 40px;
+}
+
+
+/* comienza enlaces productos*/
+
+.estilos_enlaces_productos {
+    @extend .estilos_enlaces;
+    & img:hover {
+        transition: all 0.5s;
+        transform: scale(1.2);
+    }
+}
+
+.form-control {
+    height: 40px;
+    margin-top: 0.5rem;
+}

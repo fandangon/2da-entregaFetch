@@ -1,0 +1,22 @@
+  [{
+      "id": 1,
+      "Titulo": "ORAL-B",
+      "Nombre": "Cepillo Dentales Oral B Pro Salud Ultrafino 2un",
+      "Precio": "208",
+      "img": "../images/oral-b.jpg",
+      "categoria": "cuidado"
+  }, {
+      "id": 2,
+      "Titulo": "PERPIEL",
+      "Nombre": "Crema Facial Perpiel Humectante Facial A x 80ml",
+      "Precio": 674.50,
+      "img": "../images/perpiel.jpg",
+      "categoria": "cuidado"
+  }, {
+      "id": 3,
+      "Titulo": "BAGOVIT",
+      "Nombre": "Emulsión Humectante Bagovit Reafirmante Efecto Tensor 200 ml",
+      "Precio": "650.40",
+      "img": "../images/bagovit.jpg",
+      "categoria": "cuidado"
+  }]

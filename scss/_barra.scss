@@ -1,0 +1,15 @@
+                 /* comienzo barra de secciones de los distintos html*/
+                 
+                 .estilo_barra {
+                     background-color: $bg_celestito;
+                     text-transform: uppercase;
+                     text-align: center;
+                     font-family: 'Oswald', sans-serif;
+                     & a:hover {
+                         color: blue;
+                         text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+                         transform: scale(1.1);
+                         transition: all 0.5s;
+                     }
+                     grid-area: barra;
+                 }

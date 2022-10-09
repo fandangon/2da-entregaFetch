@@ -1,0 +1,40 @@
+                                    /*comienzo productos para la venta */
+                                    
+                                    .productos {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        justify-content: space-around;
+                                        padding: 1%;
+                                        background-color: $bg_cian;
+                                        & div {
+                                            margin-top: 2%;
+                                            border-color: lightblue;
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            justify-content: space-around;
+                                            & img:hover {
+                                                opacity: 80%;
+                                            }
+                                        }
+                                        & h4 {
+                                            color: red;
+                                            font-weight: bold;
+                                            text-align: left;
+                                        }
+                                        .btn-carrito {
+                                            background-color: $bg_cielo;
+                                            border-color: blue;
+                                            color: black;
+                                            width: 70%;
+                                            justify-content: center;
+                                            margin-bottom: 15px;
+                                        }
+                                        & .imgProducto {
+                                            width: 60%;
+                                            align-items: center;
+                                        }
+                                        & .card {
+                                            width: 300px;
+                                            height: 500px;
+                                        }
+                                    }

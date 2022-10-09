@@ -1,0 +1,37 @@
+                 /* comienzo posicionamiento del gif en index.htl*/
+                 
+                 .gif_farma {
+                     position: fixed;
+                     z-index: 1;
+                     bottom: 0;
+                     right: 3%;
+                     font-size: 30px;
+                 }
+                 /*comienzo X cerrar el gif*/
+                 
+                 .cerrar_gif {
+                     color: black;
+                     font-weight: bold;
+                     float: left;
+                     font-size: 22px;
+                     line-height: 10px;
+                     cursor: pointer;
+                     transition: 0.3s;
+                 }
+                 /* comienzo mediaquery para el tamaño del gif del index*/
+                 
+                 @media screen and (max-width: 700px) {
+                     .gif_farma {
+                         & img {
+                             width: 100px;
+                         }
+                     }
+                 }
+                 
+                 @media screen and (max-width: 360px) {
+                     .gif_farma {
+                         & img {
+                             width: 80px;
+                         }
+                     }
+                 }

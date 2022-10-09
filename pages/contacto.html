@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- IMAGEN LOGO PÁGINA-->
+    <link rel="shortcut icon" href="../images/logo_tonini.png">
+    <!--LIBRERIAS ANIMATE ANIMATED-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
+    <!--DESCRIPCION PAGINA - CEO-->
+    <meta name="description" content="Registrate en nuestra pagina y recibi la mejor informacion en cuidados de saluds y promociones de nuestros productos">
+    <!--KEYWORDS - CEO-->
+    <meta name="keywords" content="registro,visita, promociones, salud,farmacia, formulario,">
+    <!--LINK HOJA ESTILO-->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Farmacia Tonini | Dermocosmetica</title>
+</head>
+
+<body class="fondo_body">
+    <!--COMIENZO DE HEADER-->
+    <header class="header_contacto">
+        <!--COMIENZO DE MARQUESINA-->
+        <div class="container_marquesina">
+            <marquee class="marquee" scrollamount=7><img src="../images/tarjeta_credito.png" alt="foto tarjeta credito">&nbsp TRABAJAMOS TODAS LAS TARJETAS DE CRÉDITO &nbsp<img src="../images/tarjeta_credito.png" alt="foto tarjeta credito"> </marquee>
+        </div>
+        <!--FIN DE MARQUESINA-->
+        <nav class="navbar navbar-light bg-ligth  ">
+            <div class="container-fluid">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 d-flex justify-content-center ">
+                    <div>
+                        <a class="navbar-brand icono_header " href="../index.html">
+                            <img src="../images/logo_tonini.png" alt="icono logo farmacia" class="d-inline-block align-text-center">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-8 col-md-6 col-lg-6 d-flex justify-content-center">
+
+                    <div class="input-icono ">
+                        <input type="search" name="input" placeholder="Buscar...">
+                    </div>
+                </div>
+                <div class="col-4 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
+                    <div class="icono_login">
+                        <a href="#openModal "><img src="../images/login.png" alt="login"> </a>
+                    </div>
+                    <!--VENTANA DE INICIO DE SESIÓN-->
+                    <div id="openModal" class="ventana_logueo ">
+                        <div>
+                            <a href="#ventana_logueo_cerrar" title="Cerrar" class="ventana_logueo_cerrar">X</a>
+                            <div class="logueo ">
+                                <div class="icono_header_logueo "><img src="../images/logo_tonini.png" width="80 " height="80 " alt="logo farmacia "></div>
+                                <p><strong><h4>Inicio de Sesión</h4></strong> </p>
+                                <div class="input_user ">
+                                    <label for="Nombre "><i class="fas fa-user "></i><strong> </strong></label>
+                                    <input type="text " name="Nombre " required>
+                                </div>
+                                <div class="input_user">
+                                    <label for="password "><i class="fas fa-lock "></i><strong> </strong></label>
+                                    <input type="password" name="password" required>
+                                </div>
+                                <div class="input_user ">
+                                    <h6><strong> Aún no tiene cuenta? <a href="../pages/contacto.html "> Regístrese</a></strong></h6>
+                                </div>
+                            </div>
+                            <div class="boton_logueo">
+                                <a href="# "><input type="button" value="Ingresar"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" icono_carrito mt-1 ">
+                        <a href="#"><img src="../images/carrito.png" id="myBtn"></a><span id="numero_carrito" data-action="cart-can" class=" contadorProductos badge rounded-circle"></span>
+                    </div>
+                    <div id="myModal" class="modal ">
+                        <div class="logueo ">
+                            <div class="modal-content btnCarro   btnBorrarCarro">
+                                <div class="icono_carro "><img src="../images/logo_tonini.png" width="80 " height="80 " alt="logo farmacia "></div>
+                                <p><strong><h4>CARRITO DE COMPRAS</h4></strong> </p>
+                                <span class="close">&times;</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--FIN DE HEADER-->
+
+    <!--COMIENZA BARRA DE NAVEGACION + MENU HAMBURGUESA-->
+    <section class="barra">
+        <nav class="navbar navbar-expand-lg navbar-light estilo_barra ">
+            <div class="container-fluid ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../pages/cuidado.html">Cuidado Personal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/suplementos.html">Suplementos y Nutrición</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/bebe.html">Bebe y Maternidad</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/dermocosmetica.html">Dermocosmetica</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/perfumes.html">Perfumes y Fragancias</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../pages/farmatips.html ">Farmatips</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/conocenos.html">Conocenos</a>
+                            </li>
+                            <li class="nav-item ">
+                                <u> <a class="nav-link " href="../pages/contacto.html ">Contacto</a></u>
+                            </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!--FIN BARRA DE NAVEGACION + MENU HAMBURGUESA-->
+    <!--COMIENZA FORMULARIO DE REGISTRO-->
+    <section>
+        <div class="contenedor">
+            <div class="wrapper animated bounceInLeft">
+                <div class="info-empresa">
+                    <h4 class="m-4">Veni a visitarnos!!!</h4>
+                    <ul class="servicios">
+                        <li><i class="fa fa-map-marker"></i>
+                            <strong>  <a href="https://goo.gl/maps/FmW7fy6CARR7E65Z7" target="_black"> Avellaneda 3498 , Santa Fe, Argentina</a></li></strong>
+
+                            <strong> <a href="https://api.whatsapp.com/send?phone=+5493424689790 " target="_blank ">
+                            <li><i class="fa fa-mobile"></i> 342 - 4689790</li>
+                        </a></strong>
+
+                            <strong> <a href="mailto:farmaciatonini@hotmail.com ">
+                            <li><i class="fa fa-envelope"></i> farmaciatonini@hotmail.com</li>
+                        </a></strong>
+                    </ul>
+                    <div class="mapa_contacto">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d849.203073286358!2d-60.68797790599774!3d-31.638989416050794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc7df82a991ef5217!2sFarmacia%20Tonini!5e0!3m2!1ses-419!2sar!4v1642722446444!5m2!1ses-419!2sar"
+                            width="350  " height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="contacto">
+                    <h3>Formulario de Registro</h3>
+
+                    <form class="formulario">
+                        <p>
+                            <label>Apellido</label>
+                            <input type="text" name="apellido" required>
+                        </p>
+                        <p>
+                            <label>Nombre</label>
+                            <input type="text" name="nom">
+                        </p>
+                        <p>
+                            <label>Correo</label>
+                            <input type="email" name="email" required>
+                        </p>
+                        <p>
+                            <label>Teléfono</label>
+                            <input type="text" name="teléfono" required>
+                        </p>
+                        <p class="full">
+                            <label>Mensaje</label>
+                            <textarea name="mensaje" placeholder="Opcional..."></textarea>
+                        </p>
+                        <p class="full">
+                            <button class="boton-enviar">Enviar</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FIN FORMULARIO DE REGISTRO-->
+     <!--COMIENZO FOOTER-->
+     <footer class="color_redes text-center">
+
+        <section class=" text-center text-white mt-4 ">
+            <section>
+                <form>
+                    <div class="row d-flex justify-content-center color_redes ">
+                        <div class="col-auto ">
+                            <p class="suscripcion ">
+                                Suscribite para recibir nuestras ofertas </p>
+                        </div>
+                        <div class="col-md-2 col-7 pt-3 ">
+                            <div class="form-outline form-white mb-4 ">
+                                <input type="email " id="form5Example2 " class="form-control " />
+                            </div>
+                        </div>
+                        <div class="col-auto pt-3 ">
+                            <button type="submit " class="boton_enviar mb-4 ">
+              Suscribirse
+              </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <div class=" d-flex justify-content-center container_footer">
+                <div class="mail">
+                    <a href="#">
+                        <img src="../images/mail_azul.png " alt="icono mail" height="30 " width="30 "></a>
+                </div>
+                <div class="instagram">
+                    <a href="#" target="_blank ">
+                        <img src="../images/instagram_azul.png " alt="icono instagram" height="30 " width="30 "></a>
+                </div>
+                <div class="whatsapp">
+                    <a href="#" target="_blank ">
+                        <img src="../images/whatsapp_azul.png " alt="icono whatsapp" height="30 " width="30 " /></a>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright© 2022
+            </div>
+    </footer>
+    <!--FIN FOOTER-->
+    <script src="../js/carrito.js"></script>
+    <script src="../json/productos.json"></script>
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
+    <script src="https://kit.fontawesome.com/146efbe387.js " crossorigin="anonymous "></script>
+
+</body>
+
+</html>

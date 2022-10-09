@@ -1,0 +1,126 @@
+                                    /*comienzo ventana de logueo*/
+                                    
+                                    .ventana_logueo {
+                                        position: fixed;
+                                        font-family: Arial, Helvetica, sans-serif;
+                                        top: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        left: 0;
+                                        background: rgba(0, 0, 0, 0.8);
+                                        z-index: 99999;
+                                        opacity: 0;
+                                        -webkit-transition: opacity 400ms ease-in;
+                                        -moz-transition: opacity 400ms ease-in;
+                                        transition: opacity 400ms ease-in;
+                                        pointer-events: none;
+                                    }
+                                    
+                                    .ventana_logueo:target {
+                                        opacity: 1;
+                                        pointer-events: auto;
+                                    }
+                                    
+                                    .ventana_logueo>div {
+                                        width: 360px;
+                                        position: relative;
+                                        margin: 10% auto;
+                                        padding: 5px 20px 13px 20px;
+                                        border-radius: 10px;
+                                        background: #fff;
+                                        background: -moz-linear-gradient(#fff, #999);
+                                        background: -webkit-linear-gradient(#fff, #999);
+                                        background: -o-linear-gradient(#fff, #999);
+                                        -webkit-transition: opacity 400ms ease-in;
+                                        -moz-transition: opacity 400ms ease-in;
+                                        transition: opacity 400ms ease-in;
+                                        .ventana_logueo_cerrar {
+                                            background: #606061;
+                                            color: #FFFFFF;
+                                            line-height: 25px;
+                                            position: absolute;
+                                            right: -12px;
+                                            text-align: center;
+                                            top: -10px;
+                                            width: 24px;
+                                            text-decoration: none;
+                                            font-weight: bold;
+                                            -webkit-border-radius: 12px;
+                                            -moz-border-radius: 12px;
+                                            border-radius: 12px;
+                                            -moz-box-shadow: 1px 1px 3px #000;
+                                            -webkit-box-shadow: 1px 1px 3px #000;
+                                            box-shadow: 1px 1px 3px #000;
+                                        }
+                                        .ventana_logueo_cerrar:hover {
+                                            background: #00d9ff;
+                                        }
+                                        .logueo {
+                                            text-align: center;
+                                            input {
+                                                background-color: rgb(212, 241, 241);
+                                                margin-bottom: 7%;
+                                            }
+                                            & label {
+                                                color: cadetblue;
+                                            }
+                                        }
+                                        & h4 {
+                                            margin-top: 5%;
+                                            margin-bottom: 10%;
+                                            color: cadetblue;
+                                            font-size: 20px;
+                                        }
+                                        & h6 {
+                                            margin-top: 5%;
+                                            margin-bottom: 10%;
+                                            color: cadetblue;
+                                            font-size: 18px;
+                                            & a {
+                                                text-decoration: none;
+                                                color: cadetblue;
+                                            }
+                                        }
+                                    }
+                                    
+                                    .input_user {
+                                        & input {
+                                            margin-top: 0.5rem;
+                                        }
+                                    }
+                                    
+                                    .boton_logueo {
+                                        text-align: center;
+                                        padding-top: 10%;
+                                        & input {
+                                            background-color: #606061;
+                                            border-radius: 1%;
+                                            width: 200px;
+                                            height: 40px;
+                                            font-size: 20px;
+                                            color: white;
+                                            text-align: center;
+                                        }
+                                        & :hover {
+                                            background-color: #00d9ff;
+                                        }
+                                    }
+                                    /*comienzo mediaquery ventana de logueo*/
+                                    
+                                    @media screen and (max-width: 540px) {
+                                        .ventana_logueo>div {
+                                            width: 300px;
+                                        }
+                                    }
+                                    
+                                    @media screen and (max-width: 340px) {
+                                        .ventana_logueo>div {
+                                            width: 250px;
+                                        }
+                                    }
+                                    
+                                    @media screen and (max-width: 300px) {
+                                        .ventana_logueo>div {
+                                            width: 240px;
+                                        }
+                                    }

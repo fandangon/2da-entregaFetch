@@ -1,0 +1,73 @@
+                              /*comienzo mixim para el color  del footer*/
+                              
+                              @mixin footer_redes ($bgcolor) {
+                                  background-color: $bgcolor;
+                                  color: black;
+                              }
+                              
+                              .color_redes {
+                                  @include footer_redes(#CFEFED);
+                              }
+                              /*comienzo iconos  en footer*/
+                              
+                              .container_footer {
+                                  & a {
+                                      & :hover {
+                                          transform: scale(1.2);
+                                          transition: all 0.5s;
+                                      }
+                                  }
+                              }
+                              
+                              .mail {
+                                  float: left;
+                                  margin-right: 2rem;
+                                  margin-top: 1rem;
+                                  a {
+                                       :hover {
+                                          filter: drop-shadow(2px 2px 2px blue);
+                                      }
+                                  }
+                              }
+                              
+                              .instagram {
+                                  display: inline-block;
+                                  justify-content: space-around;
+                                  margin-top: 1rem;
+                                  a {
+                                       :hover {
+                                          filter: drop-shadow(2px 2px 2px blue);
+                                      }
+                                  }
+                              }
+                              
+                              .whatsapp {
+                                  float: right;
+                                  margin-left: 2rem;
+                                  margin-top: 1rem;
+                                  a {
+                                       :hover {
+                                          filter: drop-shadow(2px 2px 2px blue);
+                                      }
+                                  }
+                              }
+                              /*comiendo copyright en footer*/
+                              
+                              .copyright {
+                                  text-align: center;
+                                  font-size: 15px;
+                                  margin-top: 2rem;
+                                  text-decoration: none;
+                                  color: black;
+                                  & a {
+                                      text-decoration: none;
+                                      color: black;
+                                  }
+                              }
+                              /*comienzo suscrpicion en footer*/
+                              
+                              .suscripcion {
+                                  margin-top: 2rem;
+                                  font-family: 'Oswald', sans-serif;
+                                  color: #33BBFF;
+                              }

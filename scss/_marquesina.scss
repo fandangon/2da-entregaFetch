@@ -1,0 +1,27 @@
+/*acá comienza marquesina de los html*/
+
+.container_marquesina {
+    width: 100%;
+    height: 30px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
+    border-color: black;
+    font-size: 15px;
+    border-width: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+.marquee {
+    position: absolute;
+}
+
+@keyframes scroll {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -50px;
+    }
+}

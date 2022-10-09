@@ -1,0 +1,233 @@
+        /*comienzo contenedor grid conocenos.html*/
+        
+        .contenedor_conocenos {
+            height: 2500px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            grid-template-areas: "header header" "barra barra" "foto1 info1""info2 foto2""foto3 info3""info4 foto4""footer footer";
+        }
+        /* comienzo grid-area conocenos.html */
+        
+        .header {
+            grid-area: header;
+            background-color: white;
+        }
+        
+        .barra {
+            grid-area: barra;
+            ;
+        }
+        
+        .info1 {
+            grid-area: info1;
+            padding-top: 50px;
+            display: flex;
+            align-items: center;
+            & div {
+                margin-top: 5%;
+                margin-right: 10%;
+            }
+            & p {
+                color: #004466;
+                font-size: 25px;
+                font-family: 'Yusei Magic', sans-serif;
+                text-align: center;
+            }
+        }
+        
+        .info2 {
+            @extend .info1;
+            grid-area: info2;
+        }
+        
+        .info3 {
+            @extend .info1;
+            grid-area: info3;
+        }
+        
+        .info4 {
+            @extend .info1;
+            grid-area: info4;
+        }
+        
+        .footer {
+            grid-area: footer;
+        }
+        /* comienzo extend de las fotos en conocenos.html*/
+        
+        .fotos_grid {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+            & img {
+                width: 600px;
+                height: 400px;
+            }
+        }
+        
+        .foto1 {
+            @extend .fotos_grid;
+            grid-area: foto1;
+        }
+        
+        .foto2 {
+            @extend .fotos_grid;
+            grid-area: foto2;
+        }
+        
+        .foto3 {
+            @extend .fotos_grid;
+            grid-area: foto3;
+        }
+        
+        .foto4 {
+            @extend .fotos_grid;
+            grid-area: foto4;
+        }
+        /* comienzo mediaquerys conocenos.html*/
+        
+        @media screen and (max-width: 1300px) {
+            .contenedor_conocenos {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(11, 1fr);
+                grid-template-areas: "header""barra" "foto1" "info1""foto2" "info2""foto3" "info3""foto4" "info4""footer";
+            }
+            .fotos_grid {
+                & img {
+                    width: 500px;
+                    height: 300px;
+                }
+            }
+            .info1 {
+                text-align: center;
+                padding-top: 0;
+                & div {
+                    margin-top: 0;
+                    margin-right: 0;
+                }
+                & p {
+                    font-size: 20px;
+                }
+            }
+            .info2 {
+                text-align: center;
+                padding-top: 0;
+                & div {
+                    margin-top: 0;
+                    margin-right: 0;
+                }
+                & p {
+                    font-size: 20px;
+                }
+            }
+            .info3 {
+                text-align: center;
+                padding-top: 0;
+                & div {
+                    margin-top: 0;
+                    margin-right: 0;
+                }
+                & p {
+                    font-size: 20px;
+                }
+            }
+            .info4 {
+                text-align: center;
+                padding-top: 0;
+                & div {
+                    margin-top: 0;
+                    margin-right: 0;
+                }
+                & p {
+                    font-size: 20px;
+                }
+            }
+        }
+        
+        @media screen and (max-width: 545px) {
+            .contenedor_conocenos {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(11, 1fr);
+                grid-template-areas: "header""barra" "foto1" "info1""foto2" "info2""foto3" "info3""foto4" "info4""footer";
+            }
+            .fotos_grid {
+                & img {
+                    width: 300px;
+                    height: 200px;
+                }
+            }
+            .info1 {
+                text-align: center;
+                padding-top: 0;
+                & div {
+                    margin-top: 0;
+                    margin-right: 0;
+                }
+                & p {
+                    font-size: 10px;
+                }
+            }
+            .info2 {
+                text-align: center;
+                padding-top: 0;
+                & div {
+                    margin-top: 0;
+                    margin-left: 0;
+                }
+                & p {
+                    font-size: 10px;
+                }
+            }
+            .info3 {
+                text-align: center;
+                padding-top: 0;
+                & div {
+                    margin-top: 0;
+                    margin-right: 0;
+                }
+                & p {
+                    font-size: 10px;
+                }
+            }
+            .info4 {
+                text-align: center;
+                padding-top: 0;
+                & div {
+                    margin-top: 0;
+                    margin-left: 0;
+                }
+                & p {
+                    font-size: 10px;
+                }
+            }
+        }
+        
+        @media screen and (max-width: 350px) {
+            .fotos_grid {
+                & img {
+                    width: 200px;
+                    height: 100px;
+                }
+            }
+            .info1 {
+                & p {
+                    font-size: 8px;
+                }
+            }
+            .info2 {
+                & p {
+                    font-size: 8px;
+                }
+            }
+            .info3 {
+                & p {
+                    font-size: 8px;
+                }
+            }
+            .info4 {
+                & p {
+                    font-size: 8px;
+                }
+            }
+        }

@@ -1,0 +1,181 @@
+                  /*comienzo contenedor farmatips.html*/
+                  
+                  .contenedor_farmatips {
+                      height: 2300px;
+                      display: grid;
+                      grid-template-columns: repeat(2, 1fr);
+                      grid-template-rows: repeat(7, 1fr);
+                      grid-template-areas: "header_farma header_farma" "barra_farma barra_farma" "tips1 tips2""tips3 tips4""tips5 tips6""tips7 tips8""footer_farma footer_farma";
+                      .header_farma {
+                          grid-area: header_farma;
+                          background-color: white;
+                      }
+                      .barra_farma {
+                          grid-area: barra_farma;
+                          margin-bottom: 4 rem;
+                      }
+                      .tips_card {
+                          margin-top: 4rem;
+                          margin-bottom: 4rem;
+                          display: flex;
+                          justify-content: space-around;
+                      }
+                      /*comienzo extend para farmatips.html*/
+                      .tips1 {
+                          @extend .tips_card;
+                          grid-area: tips1;
+                      }
+                      .tips2 {
+                          @extend .tips_card;
+                          grid-area: tips2;
+                      }
+                      .tips3 {
+                          @extend .tips_card;
+                          grid-area: tips3;
+                      }
+                      .tips4 {
+                          @extend .tips_card;
+                          grid-area: tips4;
+                      }
+                      .tips5 {
+                          @extend .tips_card;
+                          grid-area: tips5;
+                      }
+                      .tips6 {
+                          @extend .tips_card;
+                          grid-area: tips6;
+                      }
+                      .tips7 {
+                          @extend .tips_card;
+                          grid-area: tips7;
+                      }
+                      .tips8 {
+                          @extend .tips_card;
+                          grid-area: tips8;
+                      }
+                      .footer_farma {
+                          grid-area: footer_farma;
+                      }
+                  }
+                  /* comienzo tarjetas de farmatips*/
+                  
+                  .flip-card {
+                      background-color: transparent;
+                      width: 400px;
+                      height: 400px;
+                      perspective: 1500px;
+                  }
+                  
+                  .flip-card-inner {
+                      position: relative;
+                      width: 100%;
+                      height: 100%;
+                      text-align: center;
+                      transition: transform 0.8s;
+                      transform-style: preserve-3d;
+                  }
+                  
+                  .flip-card:hover .flip-card-inner {
+                      transform: rotateY(180deg);
+                  }
+                  
+                  .flip-card-front,
+                  .flip-card-back {
+                      position: absolute;
+                      width: 100%;
+                      height: 100%;
+                      -webkit-backface-visibility: hidden;
+                      backface-visibility: hidden;
+                  }
+                  
+                  .flip-card-front {
+                      background-color: #bbb;
+                      color: black;
+                      & img {
+                          width: 400px;
+                          height: 400px;
+                      }
+                  }
+                  
+                  .flip-card-back {
+                      background-color: #CCCCFF;
+                      color: blue;
+                      font-family: 'Josefin Sans', sans-serif;
+                      transform: rotateY(180deg);
+                      & p {
+                          color: red;
+                          font-family: 'Josefin Sans', sans-serif;
+                      }
+                      & ul {
+                          color: red;
+                          font-family: 'Josefin Sans', sans-serif;
+                      }
+                  }
+                  /*comienzo mediaquery farmatips.html*/
+                  
+                  @media screen and (max-width: 850px) {
+                      .contenedor_farmatips {
+                          height: 4700px;
+                          display: grid;
+                          grid-template-columns: repeat(1, 1fr);
+                          grid-template-rows: repeat(11, 1fr);
+                          grid-template-areas: "header_farma""barra_farma" "tips1" "tips2""tips3" "tips4""tips5" "tips6""tips7" "tips8""footer_farma";
+                      }
+                      .tips1 {
+                          margin-bottom: 500px;
+                      }
+                  }
+                  
+                  @media screen and (max-width: 767px) {
+                      .contenedor_farmatips {
+                          height: 4900px;
+                      }
+                  }
+                  
+                  @media screen and (max-width: 450px) {
+                      .contenedor_farmatips {
+                          height: 4000px;
+                      }
+                      .flip-card {
+                          width: 300px;
+                          height: 300px;
+                      }
+                      .flip-card-front {
+                          & img {
+                              width: 300px;
+                              height: 300px;
+                          }
+                      }
+                      .flip-card-back {
+                          & p {
+                              font-size: 12px;
+                          }
+                          & ul {
+                              font-size: 12px;
+                          }
+                      }
+                  }
+                  
+                  @media screen and (max-width: 350px) {
+                      .contenedor_farmatips {
+                          height: 3600px;
+                      }
+                      .flip-card {
+                          width: 250px;
+                          height: 250px;
+                      }
+                      .flip-card-front {
+                          & img {
+                              width: 250px;
+                              height: 250px;
+                          }
+                      }
+                      .flip-card-back {
+                          & p {
+                              font-size: 9px;
+                          }
+                          & ul {
+                              font-size: 9px;
+                          }
+                      }
+                  }

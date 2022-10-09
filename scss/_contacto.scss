@@ -1,0 +1,148 @@
+/*comienza formulario de contacto */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$fuente-principal: 'Roboto',
+sans-serif;
+$color-principal: #455a64;
+*,
+*::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $fuente-principal;
+    color: $color-principal;
+    line-height: 1.5;
+}
+
+.contenedor {
+    max-width: 1170px;
+    margin: 0 auto 1rem;
+    padding: 1.5rem;
+}
+
+.wrapper {
+    box-shadow: 0 0 20px 0 rgba($color-principal, .7);
+    border-radius: 5px;
+    @media screen and(min-width: 851px) {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.servicios {
+    & a {
+        text-decoration: none;
+        color: $color-principal;
+        & a:hover {
+            text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+        }
+    }
+    list-style: none;
+}
+
+.info-empresa {
+    padding: 1rem;
+    h4 {
+        text-align: center;
+        margin-top: 7rem;
+    }
+    background-color: lightsteelblue;
+}
+
+.contacto {
+    padding: 1rem;
+    background-color: lighten($color-principal, 60%);
+    background-color: lightsteelblue;
+    h3 {
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.25rem;
+    label {
+        display: block;
+    }
+    button,
+    input,
+    textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid ($color-principal, 50%);
+    }
+    textarea {
+        resize: none;
+    }
+}
+
+.full {
+    grid-column: 1 / 3;
+}
+
+.header_contacto {
+    background-color: white;
+}
+
+.boton-enviar {
+    background-color: lighten(rgb(129, 133, 146), 5%);
+    border: solid;
+    border-color: black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    &:focus,
+    &:hover {
+        background-color: $color-principal;
+        color: #fff;
+        outline: 0;
+        transition: background-color 2s ease-out;
+    }
+}
+
+.mapa_contacto {
+    text-align: center;
+    border: 20px ridge rgba(64, 109, 164, 0.5);
+}
+
+.servicios {
+    display: none;
+}
+
+
+/*comienza mediaquery de contacto.html*/
+
+@media screen and (max-width: 850px) {
+    .mapa_contacto {
+        display: none;
+    }
+    .servicios {
+        text-align: center;
+        display: unset;
+    }
+    .info-empresa {
+        & h3 {
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        & h4 {
+            display: none;
+        }
+    }
+    .contacto {
+        text-align: center;
+        & h3 {
+            display: unset;
+        }
+    }
+    .formulario {
+        margin-top: 3rem;
+    }
+}

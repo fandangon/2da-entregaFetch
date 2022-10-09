@@ -1,0 +1,113 @@
+                                /* comienzo iconos del header*/
+                                
+                                .icono_header {
+                                    img {
+                                        width: 100px;
+                                        height: 100px;
+                                    }
+                                }
+                                
+                                .icono_lupa {
+                                    img {
+                                        width: 30px;
+                                        height: 30px;
+                                    }
+                                    a {
+                                        & :hover {
+                                            transform: scale(1.2);
+                                            transition: all 0.5s;
+                                            filter: drop-shadow(5px 5px 10px #444);
+                                        }
+                                    }
+                                }
+                                
+                                .icono_login {
+                                    img {
+                                        width: 50px;
+                                        height: 50px;
+                                    }
+                                    & a {
+                                        & :hover {
+                                            transform: scale(1.2);
+                                            transition: all 0.5s;
+                                            filter: drop-shadow(5px 5px 10px #444);
+                                        }
+                                    }
+                                }
+                                
+                                .icono_carrito {
+                                    img {
+                                        width: 35px;
+                                        height: 35px;
+                                    }
+                                    a {
+                                        & :hover {
+                                            transform: scale(1.2);
+                                            transition: all 0.5s;
+                                            filter: drop-shadow(5px 5px 10px #444);
+                                        }
+                                    }
+                                }
+                                
+                                .icono_header_login {
+                                    text-align: center;
+                                }
+                                /*comienzo barra de busqueda del header*/
+                                
+                                .input-icono {
+                                    background-image: url('../images/icono_lupa.png');
+                                    background-repeat: no-repeat;
+                                    background-position: 4px center;
+                                    background-size: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    width: 80%;
+                                    padding-left: 28px;
+                                    height: 40px;
+                                    border: 1px solid black;
+                                    border-radius: 3px;
+                                }
+                                
+                                .input-icono input {
+                                    width: 100%;
+                                    font-size: 0.9em;
+                                    border: black;
+                                }
+                                
+                                .input-icono input:focus {
+                                    outline: none;
+                                }
+                                /*comienza mediaquey para el tamaño del logo e iconos del header*/
+                                
+                                @media screen and (max-width:767px) {
+                                    .icono_header {
+                                        img {
+                                            width: 80px;
+                                            height: 80px;
+                                            margin-bottom: 1rem;
+                                        }
+                                    }
+                                    .icono_carrito {
+                                        img {
+                                            width: 25px;
+                                            height: 25px;
+                                            margin-top: 10%;
+                                        }
+                                    }
+                                    .icono_login {
+                                        img {
+                                            width: 40px;
+                                            height: 40px;
+                                            margin-bottom: 25%;
+                                        }
+                                    }
+                                }
+                                
+                                @media screen and (max-width:450px) {
+                                    .icono_header {
+                                        img {
+                                            width: 60px;
+                                            height: 60px;
+                                        }
+                                    }
+                                }
